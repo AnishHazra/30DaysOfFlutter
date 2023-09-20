@@ -19,10 +19,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         fontFamily: GoogleFonts.poppins().fontFamily,
       ),
-      initialRoute: "/login",
+      initialRoute: MyRoutes.homeRoutes,
       routes: {
-        MyRoutes.loginRoutes: (context) => const LoginPage(),
+        "/": (context) => const LoginPage(),
         MyRoutes.homeRoutes: (context) => const HomePage(),
+        MyRoutes.loginRoutes: (context) => const LoginPage(),
       },
     );
   }
