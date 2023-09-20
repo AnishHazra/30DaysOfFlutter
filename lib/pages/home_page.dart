@@ -1,3 +1,4 @@
+import 'package:awesomeapp/widgets/drawer.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -17,7 +18,7 @@ class HomePage extends StatelessWidget {
       body: Center(
         child: Text("Hello $name $days, value of pi is $pi"),
       ),
-      drawer: const Drawer(),
+      drawer: const MyDrawer(),
     );
   }
 }
